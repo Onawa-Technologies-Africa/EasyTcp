@@ -150,7 +150,7 @@ namespace EasyTcp3.Encryption.Protocols.Tcp.Ssl
         {
             SslStream?.Dispose();
             NetworkStream?.Dispose();
-            Certificate?.Dispose();
+            //Certificate?.Dispose(); //Trows Error --->The server mode SSL must use a certificate with the associated private key<--- 
         }
 
         /// <summary>
